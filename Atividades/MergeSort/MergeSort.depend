@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1623283325 source:c:\users\matheus\documents\2.development\unifei\com112\atividades\mergesort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

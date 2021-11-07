@@ -1,0 +1,39 @@
+    /*
+    int id = funcaoHash(chave, n);
+
+    while (v[id] != 0 && v[id] != -1)
+    {
+        id = funcaoHash(id + 1, n);
+    }
+    v[id] = chave;
+    */
+
+
+   int id, i;
+
+    id = funcaoHash(chave, n);
+    i = id;
+
+    while(i < n)
+    {
+        if(v[i] == -1 || v[i] == 0)
+        {
+            v[i] = chave;
+            break;
+        }
+        i++;
+    }
+
+    if (i > n-1)
+    {
+        i = 0;
+        while(i < n)
+        {
+            if(v[i] == -1 || v[i] == 0)
+            {
+                v[i] = chave;
+                break;
+            }
+            i++;
+        }
+    }
